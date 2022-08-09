@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>New customer</name>
+	<description>1.Valid data for Customer Name - Customer NAMe should contain characters, space(except first character), for example Customer ID = Jon Smith
+2.Valid data for Address - Address should contain digits, characters, space(except first character), for example Address = Baghrayan 26
+3.Valid data for City - City should contain only characters, for example City = Yerevan
+4.Valid data for State - State should contain only characters, for example State = California
+5.Valid data for Pin - PIN Code should contain only digits and must have 6 Digits, for example Pin = 456856
+6.Valid data for Telephone Number - Telephone number should contain digits, space(except first character), for example Telephone number = 093 87 45 63
+7.Valid data for Email - Email ID shouldn&apos;t exist in the system. Email ID should contain digits,characters,special characters, space(except first character), for example Email = jony.brjony@gmail.com</description>
+	<sections>
+		<section>
+		<name>Customer Name</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Check Customer Name field funcionality entering Valid data</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>New account alerady created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter valid data in customer name field</content><expected>Entered data appeared in customer name field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>Successfully moved to the next field</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>Check Customer Name field functionailty entering digits</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>New account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter digits in Customer Name field</content><expected>Digits appeared in Customer Name field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Numbers are not allowed&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Check Customer Name field functionality entering special characters</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>New account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter special characters in Customer Name field</content><expected>Special characters appeared in Customer Name field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Special characters are not allowed&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>Check Customer Name field functionality without entering any value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Don&apos;t enter a value in Customer Name field</content><expected>Nothing appeared in Customer Name field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Customer name must not be blank&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C5</id>
+				<title>Check Customer Name field functionality entering space as a first character</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter space as a first character and letters</content><expected>Creditians appeared in Customer Name field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;First character cannot have space&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Address</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C6</id>
+				<title>Check Address field fuctionality entering valid data</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter valid data in Address field</content><expected>Data appeared in Address field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>Successfuly moved to the next field</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>Check Address field functionality without entering any value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Don&apos;t enter a value in Address field</content><expected>Nothing appeared in Address field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Address Field must not be blank&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>Check Address field functionality entering space as a first character</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter space as a first character and valid address</content><expected>Creditians appeared in Address field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;First character can not have space&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>Check Address field functionality entering special characters</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter special characters in Address field</content><expected>Entered data appeared in Address field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Special characters are not allowed&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>City</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C10</id>
+				<title>Check City field functionality by entering valid data</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter valid data in City field</content><expected>Entered data appeared in City field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>Successfully moved to the next field</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Check City field functionality by entering special characters</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter special characters in City field</content><expected>Entered data appeared in City field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Special character are not allowed&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>Check City field functionality without entering any value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Don&apos;t enter a value in City field</content><expected>Nothing appeared in City field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;City Field must not be blank&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Check City field functionality by entering space as a first character</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created </preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter space as a first character and valid data in City field</content><expected>Entered data appeared in City field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;First character can not have space&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>Check City field functionality by entering digits</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter digits in City field</content><expected>Entered data appeared in City field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Numbers are not allowed&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>State</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C15</id>
+				<title>Check State field functionality by entering valid data</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter valid data in State field</content><expected>Entered data appeared in State field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>Successfully moved to the next field</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>Check State field functionality by entering digits</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter digits in State field</content><expected>Entered data appeared in State field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Numbers are not allowed&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C17</id>
+				<title>Check State field functionality without entering any value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Don&apos;t enter a value in State field</content><expected>Nothing appeared in State field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;State must not be blank&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C18</id>
+				<title>Check State field functionality by entering special characters</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter special characters in State field</content><expected>Entered data appeared in State field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Special characters are not allowed&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C19</id>
+				<title>Check State field functionality by entering space as a first character</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter space as a first character and valid data in State field</content><expected>Entered data appeared in State field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;First character cannot have space&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Pin</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C20</id>
+				<title>Check Pin field functionality by entering valid data</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter valid data in Pin field</content><expected>Entered data appeared in Pin field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>Successfully moved to the next field</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C21</id>
+				<title>Check Pin field functionality by entering characters</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter characters in Pin field</content><expected>Entered data appeared in Pin field
+</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Characters are not allowed&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C22</id>
+				<title>Check Pin field functionality without entering any value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Don&apos;t enter a value in Pin field</content><expected>Nothing appeared in Pin field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;PIN Code must not be blank&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C23</id>
+				<title>Check Pin field functionality by entering special characters</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter special characters in Pin field</content><expected>Entered data appeared in Pin field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Special characters are not allowed&quot; must be shown
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C24</id>
+				<title>Check Pin field functionality by entering less than 6 digits</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter less than 6 digits in Pin field</content><expected>Entered data appeared in Pin field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;PIN Code must have 6 Digits&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C25</id>
+				<title>Check Pin field functionality by entering more than 6 digits</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter more than 6 digits in Pin field</content><expected>Entered data appeared in Pin field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An errror message &quot;PIN Code must have 6 Digits&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C26</id>
+				<title>Check Pin filed functionality by entering space as a first character</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account created successfully</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter space as a first character and valid data in Pin field</content><expected>Entered data appeared in Pin field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;First character can not have space&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Telephone Number</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C27</id>
+				<title>Check Telephone Number field functionality by entering valid data</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter valid data in Telephone Number field</content><expected>Entered data appeared in Thelephone Number field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>Successfully moved to the next field</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C28</id>
+				<title>Check Telephone Number field functionality without enterig any value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Don&apos;t enter a value in Telephone Number field</content><expected>Entered data appeared in Telephone Number field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Mobile no must not be blank&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C29</id>
+				<title>Check Telephone Number field functionality by entering  special characters</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter special characters in Telephone Number field</content><expected>Entered data appeared in Telephone Number field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Special character are not allowed&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C30</id>
+				<title>Check Telephone Number field functionality by entering characters</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter characters in Telephone Number field</content><expected>Entered data appeared in Telephone Number field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Character are not allowed&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C31</id>
+				<title>Check Telephone Number field functionality by entering space as a first character</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter space as a first character and valid data in Telephone Number field</content><expected>Entered data appeared in Telephone Number field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;First character can not have space&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Email ID</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C32</id>
+				<title>Check Email ID field functionality by entering valid data</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter valid data in Email field</content><expected>Entered data appeared in Email field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>Successfully moved to the next field</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C33</id>
+				<title>Check Email ID field functionality without entering any value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Don&apos;t enter a value in Email ID field</content><expected>Entered data appeared in Email ID field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Email ID must not be blank&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C34</id>
+				<title>Check Email ID field functionality by entering invalid email form</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter invalid Email form in Email field</content><expected>Entered data appeared in Email field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;Email ID is not valid&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C35</id>
+				<title>Check Email ID field functionality by entering space as a first character</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Account already created</preconds>
+										<steps_separated><step>
+<index>1</index><content>Enter space as a first character and valid data in Email ID field</content><expected>Entered data appeared id Email ID field</expected></step>
+<step>
+<index>2</index><content>Press TAB</content><expected>An error message &quot;First character can not have space&quot; must be shown</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
